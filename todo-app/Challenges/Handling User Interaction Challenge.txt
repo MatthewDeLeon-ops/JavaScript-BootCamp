@@ -1,0 +1,24 @@
+Handling User Interaction Challenge --12.33 mins
+
+1. add new button to todo with text  (done)
+2. add a click listener for the button (do)
+3. print message to console. (do after 2)
+
+ANSWER , place in the index.html file
+
+<!DOCTYPE html>
+<html> 
+    <head></head>
+    <h1>Todo App</h1>
+    <body>
+        <h1>Todos App</h1>
+        <p>This application was created by Matthew De Leon</p>
+        <button> Thank you for submitting your list</button>
+        <script> src ='todo-app.js' </script> 
+    </body>
+</html>
+
+todo-app.js
+
+document.querySelector('#Please-Submit-your-list-of-todos').addEventListener('click', function(e){
+    console.log('Thank you for submitting your list')

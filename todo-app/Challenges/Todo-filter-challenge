@@ -1,0 +1,34 @@
+No looking at notes app filtes fffffffffffffff
+
+1. create a new div to contain all of the todos at bottom of the page -- done i think.... - lines 9-11
+
+2. Create a filters object with a search text property and wire in an input to change that property with attributes, listener that targets the input and watches for changes
+
+
+-- const filters = {
+    searchText: ''
+} -- added to provide the search text parameter still partly done
+
+const renderNotes = function(notes, filters) {
+    const filteredNotes = notes.filter(function(note){
+        return note.title.toLowerCase().includes(filters.searchText.toLowerCase())
+    })
+    document.querySelector('#notes').innerHTML = ''
+
+    filteredNotes.forEach(function(note){
+    const noteEl = document.createElement('p')
+    noteEl.textContent = note.title
+    document.querySelector('#notes').appendChild(noteEl)
+    })
+}
+
+
+
+3. create a renders todos function to render and rerender the latest filtered data.
+
+
+
+<!-- input (empty element): The input element represents a typed data field, usually with a form control to allow the user to edit the data.-->
+
+<!-- input event 'input' will detect any changes when typing in real time -->
+<!-- placeholder allows you to provide sample text when it is empty -->

@@ -1,0 +1,18 @@
+1. Create a new input where the user places in the text for todo with an id
+2. Listen for changes and print those changes in the dev tools
+3.
+
+
+Answer 
+
+html file
+
+<input id="new-todo-item" type="text" placeholder="Enter something todo">
+<button id="Please-Submit-your-list-of-todos" type="submit">  Please Submit Your List of todos</button>
+todo-app.js
+
+
+todo-app.js
+
+document.querySelector('#new-todo-item ').addEventListener('input', function(e){
+    console.log(e.target.value) })

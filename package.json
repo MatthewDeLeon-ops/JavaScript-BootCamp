@@ -1,0 +1,23 @@
+{
+  "name": "my-first-programming-language-applied",
+  "version": "1.0.0",
+  "description": "My personal repository displaying all of the javascript concepts and them being applied via projects using the knowledge I applied from each section. The projects are nested in each section. Course challenges, Self-challenges, guessing game,etc.",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programming-believer/My-first-programming-language-applied.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programming-believer/My-first-programming-language-applied/issues"
+  },
+  "homepage": "https://github.com/programming-believer/My-first-programming-language-applied#readme"
+}

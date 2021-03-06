@@ -1,0 +1,6 @@
+
+1. Add in the form component below the todos list and in html (done)
+2. setup an submit event listener handler and cancel the default application (done)
+3. add a new item to the todos array with text data (completed value of false) (done)
+4. rerender the application. (done)
+5. clear the input field value

@@ -1,0 +1,14 @@
+1. add an id onto our add todo button (Done)
+2. Target the code by the id rather than by the tag name which is what  we are currently doing. 
+an id is a uuid --> #''
+
+
+html
+
+    <button id="Please-Submit-your-list-of-todos" type="submit">  Please Submit Your List of todos</button>
+
+todo-app.js
+
+document.querySelector('#Please-Submit-your-list-of-todos').addEventListener('click', function(e){
+    e.target.textContent = 'You have submitted your list of todos to us. Have a good day.'
+    console.log('Thank you for submitting your list')

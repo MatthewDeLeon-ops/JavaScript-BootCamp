@@ -1,0 +1,5 @@
+setup a root div
+setup and append a checkbox (set type attribute)
+someNode.setAttribute('type, check)
+setup and append a span (set text)
+setup and append a button (set text)

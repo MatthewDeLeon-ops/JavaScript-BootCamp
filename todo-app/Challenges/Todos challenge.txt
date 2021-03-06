@@ -1,0 +1,29 @@
+
+// You have 2 todo's left (p element)
+// add a p for each todo above (use text value - > text), see message with paragraphs of each
+
+
+paste in the todos-app.js file 
+
+// const incompleteTodos = todos.filter(function(todo){
+//     return !todo.completed
+// })
+
+// const summary = document.createElement('h2')
+// summary.textContent = `you have ${incompleteTodos.length} todos left`
+// document.querySelector('body').appendChild(summary)
+// todos.forEach(function(todo){
+//     const p = document.createElement('p')
+//     p.textContent = todo.text
+//     document.querySelector('body').appendChild(p)
+// })
+
+place this into index.html
+
+<!-- <html>
+    <head></head>
+    <body>
+        <h1> Todos</h1>
+        <script src="todo-app.js"></script>
+        </body>
+</html>  -->

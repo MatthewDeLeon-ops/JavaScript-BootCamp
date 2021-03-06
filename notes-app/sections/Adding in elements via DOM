@@ -1,0 +1,13 @@
+  // adding elements via Dom\\ lecture 52
+
+// const ps = document.querySelectorAll('p')
+// ps.forEach(function (p){
+//     p.textContent = '************' // update text content in your website
+//     // console.log(p.textContent)
+// })
+
+// // adding in a new element
+// const newParagraph = document.createElement('p')
+// newParagraph.textContent = 'this is a new element from javascript'
+// //append child method
+// document.querySelector('body').appendChild(newParagraph)

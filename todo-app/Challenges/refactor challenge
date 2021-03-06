@@ -1,0 +1,11 @@
+Fetch existing todos from localstorage
+getsavedtodos
+
+savetodos to localstorage
+savetodos
+
+render application todos based on filters
+rendertodos
+
+get the dom elements for an individual note
+generateTodoDom

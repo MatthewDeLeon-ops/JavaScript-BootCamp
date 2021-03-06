@@ -1,0 +1,39 @@
+Part 1
+
+1. Create a new html file
+2. an h1 AND 5 P tags
+3. Serve up that folder and view the doc in the browser
+
+
+Part 2
+
+create an link a javascript file to the html (done)
+remove all p tags that have "the in text"
+
+
+Paste into index.html 
+
+
+<!-- DOM CHALLENGE component 2/2 Part 1
+-->
+<!-- <!DOCTYPE html> -->
+<!-- <html>
+    <head></head>
+    <body>
+        <h1> Todos</h1>
+        <p>Clean my Music up</p>
+        <p> What is the meaning of humanity</p>
+        <p>Think about why our president fails as a leader</p>
+        <p>Give us a new leader</p>
+        <p>Stop racism people</p>
+        <script src="todo-app.js"></script>    </body>
+</html>  -->
+
+paste into todo-app.js
+
+// const paragraphs = document.querySelectorAll('p')
+// paragraphs.forEach(function (paragraph){
+//     if (paragraph.textContent.includes('the')){
+//         paragraph.remove()
+//     }
+// })

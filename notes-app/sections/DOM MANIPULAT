@@ -1,0 +1,6 @@
+    // DOM MANIPULATION \\ lecture 51
+
+// DOM -- Document object model
+//  DOM Is used for updating the javascript in a website.
+// const p = document.querySelector('p')
+// p.remove();

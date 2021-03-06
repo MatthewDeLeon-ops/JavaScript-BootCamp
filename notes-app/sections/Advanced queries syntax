@@ -1,0 +1,11 @@
+ // advanced queries and user interaction\\  lecture 53-54
+
+// document.querySelector('#create-notes').addEventListener('click', function(e) {
+// e.target.textContent = 'all notes created'
+// })
+
+// document.querySelector('#remove-all').addEventListener('click', function() {
+// document.querySelectorAll('.Note').forEach(function(Note){
+//     Note.remove()
+//     })
+// })

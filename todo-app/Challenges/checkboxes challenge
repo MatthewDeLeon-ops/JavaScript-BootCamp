@@ -1,0 +1,28 @@
+// 1.create an chekcbox event listener -> hide completed (done)
+// 2.create new hidecreated filter (default) false
+// 3. update hidecompleted an rerender  list on checkbox change
+// 4.setup rendertodos to remove completed items
+
+
+todo app
+
+
+const renderTodos = function (todos, filters) {
+    const filteredTodos = todos.filter(function (todo) {
+        const searchTextMatch = todo.text.toLowerCase().includes(filters.searchText.toLowerCase())
+        const hideCompletedMatch = !filters.hideCompleted || !todo.completed
+
+        return searchTextMatch && hideCompletedMatch
+    })
+
+document.querySelector('#hide-completed').addEventListener('change', function(e){
+    filters.hideCompleted = e.target.checked
+    renderTodos(todos, filters)
+})
+
+
+html 
+
+        <label>
+            <input type="checkbox" id ="hide-completed"><i> hide completed todos</i>
+        </label>

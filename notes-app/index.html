@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html> 
+    <head>
+
+    </head>
+    <body>
+        <h1>Notes App</h1> <!-- The h1 tags allow you to add in text-->
+        <label>
+            Search Notes:  <input id ="search-text" type ="text" placeholder="filter Todos">
+        </label>
+        <select id="filter-by">
+            <option value="byEdited">sort by last edited</option>
+            <option value="byCreated">sort by recently created</option>
+            <option value="alphabetical">sort alphabetically</option>
+        </select>
+        <div id="notes"></div>
+        <button id = "create-note"> Create Note</button>
+        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+        <script src="uuidv4.js"></script> 
+        <script src="notes-functions.js"></script>
+        <script src="notes-app.js"></script> 
+    </body>
+</html>
+
+
+<!-- input (empty element): The input element represents a typed data field, usually with a form control to allow the user to edit the data.-->
+
+<!-- input event 'input' will detect any changes when typing in real time -->
+<!-- placeholder allows you to provide sample text when it is empty -- -->
+<!--  form id allows you to create a form containing interactive controls for submitting information. -->
+<!--  i allows you to italicize text -->
+<!--  h2 will make text bold -->
+<!-- button allows you to make a clickable and executable button -->
+<!-- type allows you to specifies the type of <input> element to display.-->
+<!-- input is used to create interactive controls for web-based forms in order to accept data from the user -->
+<!-- label represents a caption for an item in a user interface. -->
+<!-- new elements to remember
+form
+label
+h2
+h1
+i
+button
+div
+type
+input
+script
+select
+-->
+
+<!-- old syntax
+
+    <form id="name-form">
+        <input type="text" placeholder="First name" name="firstName">
+        <button>Submit</button>
+        </form> -->
+        <!-- <label>
+            <input id="for-fun"
+            type="checkbox"> click here to verify you want to make a note.
+        </label> 
+    -->
