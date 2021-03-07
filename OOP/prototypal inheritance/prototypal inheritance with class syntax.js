@@ -11,14 +11,12 @@ const Person = function (firstName, lastName, age, likes = [], degree_type = [])
 };
 
 Person.prototype.getBio = function () {
-  let bio = `${this.firstName} is ${this.age}.`;
-
   this.likes.forEach((like) => {
-    bio += `${this.firstName} likes ${like}. `;
+    bio += `${this.firstName} likes ${like} `;
   });
   
   this.degree_type.forEach((degree_type) => {
-    bio += `${this.degree_type} majored in ${degree_type}. `;
+    bio += `${this.firstName} majored in ${degree_type} `;
   });
 
   return bio;
@@ -61,6 +59,6 @@ console.log(me.getGraduationYear())
 // me.setName("Matthew DeLeon");
 // console.log(me.getBio());
 
-const person2 = new Person("Jacqueline", "Cai", 30);
+// const person2 = new Person("Jacqueline", "Cai", 30);
 
-console.log(person2.getBio());
+// console.log(person2.getBio());
