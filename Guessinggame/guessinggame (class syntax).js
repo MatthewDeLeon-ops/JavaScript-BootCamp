@@ -1,8 +1,6 @@
-// Disable new guesses unless "playing" -- IP
-// setup a new method to get back a status message. todo
-// playing -> guesses left: 3 TODO
-// failed -> nice try! the word was dog -- Completed
-// finished -> Great work! you guessed the word. -- completed
+// Convert "getStatusMessage" to a custom getter for "status message"
+// convert "getPuzzle" to a custom getter for "puzzle"
+// 3. change usage in app.js
 
 class Guesstheword {
   constructor(word, attemptsleft) {
