@@ -1,7 +1,5 @@
 // import Guesstheword from ('../Hangman/Hangman')
 const componentsEL= document.querySelector('#components')
-
-
 const guessEL = document.querySelector('#guess')
 
 //Setup the word you want the player to guess with the limit of guesses permitted
