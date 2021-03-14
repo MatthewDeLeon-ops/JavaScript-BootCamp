@@ -1,17 +1,6 @@
 // I want to initiate a request from my javascript program and do something with the response from my javascript file.
 // make http request to get json back and then parse it into a javascript object to extract the data off of it.  The json that comes back contains a randomly generated word.
-const componentsEL = document.querySelector("#components");
-const guessEL = document.querySelector("#guess");
-const Word1 = new Guesstheword("dog", 2);
 
-window.addEventListener("keypress", (e) => {
-  const guess = String.fromCharCode(e.charcode);
-  Word1.makeanattempt(guess);
-  componentsEL.textContext = Word1.challenge();
-  guessEL.textContext = Word1.guessingstatus();
-  console.log(Word1.status);
-});
-componentsEL.textContent = Word1.challenge();
 
 // Making an http request process using a constructor function provided by my browser
 const request = new XMLHttpRequest();

@@ -42,7 +42,7 @@ locationrequest.addEventListener("readystatechange", (e) => {
   }
 });
 
-locationrequest.open("GET", "https://restcountries.eu/rest/wv2/all");
+locationrequest.open("GET", "https://restcountries.eu/rest/v2/all");
 locationrequest.send();
 
 
