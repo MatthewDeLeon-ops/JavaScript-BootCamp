@@ -1,15 +1,8 @@
-// Disable new guesses unless "playing" -- IP
-// setup a new method to get back a status message. todo
-// playing -> guesses left: 3 TODO
-// failed -> nice try! the word was dog -- Completed
-// finished -> Great work! you guessed the word. -- completed
-
 const Guesstheword = function (word, attemptsleft) {
   this.word = word.toLowerCase().split("");
   this.attemptsleft = attemptsleft;
   this.charactersguessed = [];
   this.status = "Game in progress";
-  // && this.attemptsleft
 };
 
 Guesstheword.prototype.currentstatusreport = function () {
@@ -58,21 +51,15 @@ Guesstheword.prototype.makeanattempt = function (guess) {
   const isspecial = !this.charactersguessed.includes(guess);
   const badattempt = !this.word.includes(guess);
 
-  // Condition  to disable new guesses unless "the status is playing"
   if (this.status !== "Game in progress") {
     return;
   }
-
-  // Removes the hidden character when a letter is correctly guessed
   if (isspecial) {
     this.charactersguessed.push(guess);
   }
-
-  // Decreases the guessing limit counter when a invalid guess is made
   if (isspecial && badattempt) {
     this.attemptsleft = this.attemptsleft - 1;
   }
 
   this.currentstatusreport();
-  //generates the report which is update by each guess made
 };

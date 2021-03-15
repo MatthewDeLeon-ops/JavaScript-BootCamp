@@ -22,4 +22,3 @@ const components = getPuzzle((error, puzzle) => {
   // function called within function #callback
   // Read more on callback
 });
-5
