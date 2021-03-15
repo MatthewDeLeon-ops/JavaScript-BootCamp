@@ -11,6 +11,5 @@ console.log(fullName)
 // PRINT THE RESULTS.
 
 let CITY = 'Las Cruces'
-let COUNTRY = ' United States Of America'
+let r = ' United States Of America'
 Location = CITY + ' , ' + COUNTRY
-console.log(Location)
