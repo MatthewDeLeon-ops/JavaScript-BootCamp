@@ -4,7 +4,7 @@
 // Print the full country name (name property)
 // later down the road try using a setter to map country code to alpha2code
 
-/*
+
 const alpha2Code = "US";
 const locationrequest = new XMLHttpRequest();
 locationrequest.addEventListener("readystatechange", (e) => {
@@ -18,28 +18,28 @@ locationrequest.addEventListener("readystatechange", (e) => {
 });
 locationrequest.open("GET", "https://restcountries.eu/rest/v2/all");
 locationrequest.send();
-*/
+
 
 /////////////Refactored \\\\\\\\\\\
 
-const alpha2Code = "US";
-const locationrequest = new XMLHttpRequest();
+// const alpha2Code = "US";
+// const locationrequest = new XMLHttpRequest();
 
-locationrequest.addEventListener("readystatechange", (e) => {
-  if (e.target.readyState === 4 && e.target.status === 200) {
-    const data = JSON.parse(e.target.responseText);
+// locationrequest.addEventListener("readystatechange", (e) => {
+//   if (e.target.readyState === 4 && e.target.status === 200) {
+//     const data = JSON.parse(e.target.responseText);
 
-    const information = data.forEach((item) => {
-      if (item.alpha2Code === alpha2Code) {
-        console.log(`Your country name is: ${item.name}`);
-      }
-    });
-  } else if (e.target.readyState === 4 || e.target.status === 400) {
-    console.error(
-      "unable to fetch the data requested in response to the Get Error"
-    );
-  }
-});
+//     const information = data.forEach((item) => {
+//       if (item.alpha2Code === alpha2Code) {
+//         console.log(`Your country name is: ${item.name}`);
+//       }
+//     });
+//   } else if (e.target.readyState === 4 || e.target.status === 400) {
+//     console.error(
+//       "unable to fetch the data requested in response to the Get Error"
+//     );
+//   }
+// });
 
-locationrequest.open("GET", "https://restcountries.eu/rest/v2/all");
-locationrequest.send();
+// locationrequest.open("GET", "https://restcountries.eu/rest/v2/all");
+// locationrequest.send();

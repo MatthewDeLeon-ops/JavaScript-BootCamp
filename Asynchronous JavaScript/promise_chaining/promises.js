@@ -41,21 +41,18 @@ const getDataPromise = (num) =>
     }, 200);
   });
 
-getDataPromise(4).then(
-  (data) => {
-    getDataPromise(data).then(
-      (data) => {
-        console.log(`Promise set 2 of data: ${data}`);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
-  },
-  (err) => {
-    console.log(err);
-  }
-);
+// getDataPromise(4).then((data) => {
+//   getDataPromise(data).then((data) => {
+//         console.log(`Promise set 2 of data: ${data}`);
+//       },
+//       (err) => {
+//         console.log(err);
+//       }
+//     );
+//   },(err) => {
+//     console.log(err);
+//   }
+// );
 /// bad promise method
 
 /*
@@ -78,9 +75,10 @@ getDataPromise(10)
   })
   // promise chained here
   .then((data) => {
-    return getDataPromise(data).then((data) => {
-      console.log(data);
-    });
+    return "this is some test data";
+  })
+  .then((data) => {
+    console.log(data);
   })
   // catch chained here
   .catch((err) => {
