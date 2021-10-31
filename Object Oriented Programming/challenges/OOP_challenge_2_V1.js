@@ -10,7 +10,7 @@ const Guesstheword = function(word, remainingGuesses) {
     // will convert word instances to lowercase.
     this.remainingGuesses = remainingGuesses
     // Adds in the property for Guesses Remaining
-    this.charactersguessed = ['o','x']
+    this.charactersguessed = ['x']
     // Array of characters used for the guess.
 }
 
